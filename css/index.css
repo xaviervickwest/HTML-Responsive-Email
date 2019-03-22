@@ -171,6 +171,15 @@ body {
   height: auto;
   position: relative;
 }
+.container #img1:hover {
+  transform: scale(1.05);
+}
+.container #img2:hover {
+  transform: scale(1.05);
+}
+.container #img:hover {
+  transform: scale(1.25);
+}
 .container .flex {
   width: 100%;
 }
@@ -223,8 +232,14 @@ body {
   text-align: center;
   opacity: 0.6;
 }
-@media (max-width: 320px) {
+@media all (max-width: 320px) {
   .container {
     font-size: calc(2.5em - 1);
+  }
+  .container .email_container {
+    width: 80%;
+  }
+  .container button {
+    width: 100;
   }
 }
